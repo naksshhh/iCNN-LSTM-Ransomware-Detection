@@ -71,17 +71,21 @@ Recommended GPU run path (used in this project):
 
 ### A) Local run (CPU)
 
-powershell
+## How to Run
+
+### A) Local run (CPU)
+
+```powershell
 python -m venv venv
 venv/Scripts/Activate
 pip install -r requirements.txt
-run_train.py --output-dir outputs src.icnn_lstm.report --metrics-json outputs/incremental_metrics.json --output-dir outputs/reports
-
+python run_train.py --output-dir outputs
+```
 ### B) Docker GPU run (recommended)
 
-powershell
+```bash
 docker run --rm --gpus all -e TF_FORCE_GPU_ALLOW_GROWTH=true -v "${PWD}:/workspace" -w /workspace tensorflow/tensorflow:2.17.0-gpu bash -lc "python -m pip install --no-input pandas scikit-learn imbalanced-learn matplotlib pyyaml && python run_train.py --initial-events 40000 --update-events 10000 --initial-epochs 100 --update-epochs 100 --fit-batch-size 64 --output-dir outputs && python -m src.icnn_lstm.report --metrics-json outputs/incremental_metrics.json --output-dir outputs/reports"
-
+```
 ## Project Structure
 
 1. run_train.py: training entrypoint.
