@@ -13,6 +13,8 @@ Core ideas implemented:
 2. Batch-based incremental learning (initial baseline + periodic updates).
 3. Recall-focused evaluation using F2 score for ransomware detection.
 4. Automated result packaging: metrics tables, visual plots, and HTML dashboard.
+<img width="767" height="737" alt="image" src="https://github.com/user-attachments/assets/0c09ae5b-e06e-45d1-a66d-acc20ef0f22e" />
+
 
 
 ## Implemented Architecture
@@ -35,6 +37,8 @@ Incremental learning pipeline:
 3. Per update window split into 80 percent train and 20 percent validation.
 4. SMOTE-enabled class balancing in training splits.
 5. Stage-aware training logs to avoid confusion with epoch resets across batches.
+<img width="922" height="548" alt="image" src="https://github.com/user-attachments/assets/cba793b9-6f73-46fb-a05f-46ca1f7d7c52" />
+
 
 ## Hyperparameters (Table 4 Applied)
 
@@ -102,6 +106,9 @@ Source: outputs/reports/run_summary.json
 8. Mean accuracy: 0.9644
 9. Best batch F2: 1.0000
 10. Worst batch F2: 0.4351
+<img width="1800" height="900" alt="image" src="https://github.com/user-attachments/assets/3d597291-5435-497d-a4d7-9aec0c022240" />
+
+
 
 Interpretation:
 The model maintains very high recall on average, which is critical in ransomware detection where false negatives are high-risk.
