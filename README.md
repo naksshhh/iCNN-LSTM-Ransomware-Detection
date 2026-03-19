@@ -137,4 +137,4 @@ Generated at outputs/reports:
 ## Reference
 
 Primary paper implemented:
-iCNN-LSTM+: A Batch-Based Incremental Ransomware Detection System Using Sysmon.
+[iCNN-LSTM+: A Batch-Based Incremental Ransomware Detection System Using Sysmon](https://ieeexplore.ieee.org/document/11002852/)
