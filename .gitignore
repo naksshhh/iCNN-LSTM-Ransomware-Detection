@@ -28,8 +28,6 @@ Thumbs.db
 *.log
 
 # Project-generated training artifacts
-outputs/
-outputs_*/
 *.keras
 
 # Jupyter

@@ -1,0 +1,17 @@
+{
+  "num_incremental_batches": 15,
+  "initial_train_seconds": 319.16413617134094,
+  "total_runtime_seconds": 1692.515038728714,
+  "mean_f2": 0.8775896478197264,
+  "median_f2": 0.9880952380952381,
+  "max_f2": 1.0,
+  "min_f2": 0.435126582278481,
+  "mean_recall": 0.9485338371945845,
+  "mean_precision": 0.7763709797354428,
+  "mean_accuracy": 0.9643999999999999,
+  "mean_batch_seconds": 89.53205930391947,
+  "best_batch_id": 1,
+  "best_batch_f2": 1.0,
+  "worst_batch_id": 15,
+  "worst_batch_f2": 0.435126582278481
+}
